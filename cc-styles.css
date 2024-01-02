@@ -1,0 +1,54 @@
+/* External Styles - Production Only */
+/******************************/
+
+/******************************/
+/********* Stagger ************/
+/******************************/
+@media only screen and (min-width: 992px) {
+  [stagger].show:nth-of-type(2) {
+    transition-delay: 0.5s;
+  }
+  [stagger].show:nth-of-type(3) {
+    transition-delay: 0.75s;
+  }
+  [stagger].show:nth-of-type(4) {
+    transition-delay: 1s;
+  }
+  [stagger].show:nth-of-type(5) {
+    transition-delay: 1.25s;
+  }
+  [stagger].show:nth-of-type(6) {
+    transition-delay: 1.5s;
+  }
+  [stagger].show:nth-of-type(7) {
+    transition-delay: 1.75s;
+  }
+  [stagger].show:nth-of-type(8) {
+    transition-delay: 2s;
+  }
+  [stagger].show:nth-of-type(9) {
+    transition-delay: 2.25s;
+  }
+  [stagger].show:nth-of-type(10) {
+    transition-delay: 2.5s;
+  }
+  [stagger].show:nth-of-type(11) {
+    transition-delay: 2.75s;
+  }
+  [stagger].show:nth-of-type(12) {
+    transition-delay: 3s;
+  }
+}
+
+/******************************/
+/******** Zoom Images *********/
+/******************************/
+@media (hover: hover) {
+  [zoom]:hover img {
+    transform: scale(1.5);
+  }
+  [zoom] img {
+    transform: scale(1);
+    transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
