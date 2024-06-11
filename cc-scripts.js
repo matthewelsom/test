@@ -29,7 +29,7 @@ function cursorText() {
 // Guest Counter
 ///////////////
 function guestCounter() {
-  if ($pageLayout === "home") {
+  if ($pageLayout === "home" || $pageLayout === "about") {
     var startDate = new Date(2022, 7, 1),
       today = new Date(),
       diff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)),
