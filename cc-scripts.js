@@ -114,40 +114,6 @@ function extLinks() {
 ///////////////
 function swipers() {
   ////////////////////////////////////////////////////////////
-  // Hero Swiper
-  const heroSwiper = new Swiper(".slider_wrapper.is-hero", {
-    // Optional parameters
-    wrapperClass: "hero_slider_mask",
-    slideClass: "hero_slide",
-    slideActiveClass: "slider_active",
-    navigation: {
-      nextEl: ".slider_next",
-      prevEl: ".slider_prev",
-    },
-    pagination: {
-      type: "bullets",
-      el: ".slider_pagination.is-hero",
-      clickable: true,
-    },
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: "auto",
-
-    // spaceBetween: 0,
-    simulateTouch: false,
-    allowTouchMove: true,
-    preventInteractionOnTransition: true,
-    autoplay: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
-    sensitivity: 1,
-    watchSlidesVisibility: true,
-    preloadImages: true,
-    updateOnImagesReady: true,
-  });
-  ////////////////////////////////////////////////////////////
   // Gallery Swiper
   const portfolioSwiper = new Swiper(".slider_wrapper.is-gallery", {
     // Optional parameters
@@ -180,44 +146,6 @@ function swipers() {
     watchSlidesVisibility: true,
     preloadImages: true,
     updateOnImagesReady: true,
-  });
-  ////////////////////////////////////////////////////////////
-  // Reviews Slider
-  const reviewSwiper = new Swiper(".slider_wrapper.is-reviews", {
-    // Parameters
-    wrapperClass: "slider_list",
-    slideClass: "slider_item",
-    slideActiveClass: "slider_active",
-    navigation: {
-      nextEl: ".slider_next",
-      prevEl: ".slider_prev",
-    },
-    pagination: {
-      type: "bullets",
-      el: ".slider_pagination.is-reviews",
-      clickable: true,
-    },
-    slidesPerView: "auto",
-    loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
-
-    simulateTouch: false,
-    allowTouchMove: true,
-    preventInteractionOnTransition: true,
-    autoplay: false,
-    sensitivity: 1,
-    watchSlidesVisibility: true,
-    preloadImages: true,
-    updateOnImagesReady: true,
-    // breakpoints: {
-    //   768: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 0,
-    //   },
-    // },
   });
 }
 
