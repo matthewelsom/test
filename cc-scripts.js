@@ -115,18 +115,18 @@ function extLinks() {
 function swipers() {
   ////////////////////////////////////////////////////////////
   // Gallery Swiper
-  const portfolioSwiper = new Swiper(".slider_wrapper.is-gallery", {
+  const portfolioSwiper = new Swiper(".swiper.is-gallery", {
     // Optional parameters
-    wrapperClass: "slider_list",
-    slideClass: "slider_item",
-    slideActiveClass: "slider_active",
+    wrapperClass: "swiper_list",
+    slideClass: "swiper_item",
+    slideActiveClass: "swiper_active",
     navigation: {
-      nextEl: ".slider_next",
-      prevEl: ".slider_prev",
+      nextEl: ".swiper_left",
+      prevEl: ".swiper_right",
     },
     pagination: {
       type: "bullets",
-      el: ".slider_pagination.is-gallery",
+      el: ".swiper_pagination",
       clickable: true,
     },
     centeredSlides: true,
