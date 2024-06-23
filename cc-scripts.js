@@ -113,40 +113,42 @@ function extLinks() {
 // Swipers
 ///////////////
 function swipers() {
-  ////////////////////////////////////////////////////////////
-  // Gallery Swiper
-  const portfolioSwiper = new Swiper(".swiper.is-gallery", {
-    // Optional parameters
-    wrapperClass: "swiper_list",
-    slideClass: "swiper_item",
-    slideActiveClass: "swiper_active",
-    navigation: {
-      nextEl: ".swiper_left",
-      prevEl: ".swiper_right",
-    },
-    pagination: {
-      type: "bullets",
-      el: ".swiper_pagination",
-      clickable: true,
-    },
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: "auto",
+  if ($pageLayout === "home") {
+    ////////////////////////////////////////////////////////////
+    // Gallery Swiper
+    const portfolioSwiper = new Swiper(".swiper.is-gallery", {
+      // Optional parameters
+      wrapperClass: "swiper_list",
+      slideClass: "swiper_item",
+      slideActiveClass: "swiper_active",
+      navigation: {
+        nextEl: ".swiper_left",
+        prevEl: ".swiper_right",
+      },
+      pagination: {
+        type: "bullets",
+        el: ".swiper_pagination",
+        clickable: true,
+      },
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
 
-    // spaceBetween: 0,
-    simulateTouch: false,
-    allowTouchMove: true,
-    preventInteractionOnTransition: true,
-    autoplay: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
-    sensitivity: 1,
-    watchSlidesVisibility: true,
-    preloadImages: true,
-    updateOnImagesReady: true,
-  });
+      // spaceBetween: 0,
+      simulateTouch: false,
+      allowTouchMove: true,
+      preventInteractionOnTransition: true,
+      autoplay: true,
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
+      sensitivity: 1,
+      watchSlidesVisibility: true,
+      preloadImages: true,
+      updateOnImagesReady: true,
+    });
+  }
 }
 
 ///////////////
